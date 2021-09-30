@@ -1,9 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.haku">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="haku"
+        android:label="Haku"
         android:icon="@mipmap/ic_launcher">
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBLKn7Ad_x3qNWXaTkiXnhBsp44yrYA0Xk"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="${googleMapApiKey}"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
